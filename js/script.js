@@ -21,7 +21,7 @@ for (let i= 0; i< numbers.length; i++); {
     const timeItself = numbers.map (multiplyByitself);
     console.log(timeItself);
 }
-*/
+
 
 //filter//
 
@@ -31,6 +31,26 @@ const evenNumbers = numbers.filter(isEven);
 console.log(evenNumbers);
 
 
-        
+const words = [
+    'hello',
+    'goodbye',
+    'tree',
+    'Antarctica'
+];
+const isLongerThan5 = word => word.length > 5;
+const longWords = words.filter(isLongerThan5);
+console.log(longWords);
 
+*/
+//Every/Some
  
+const formValues = [
+    'Shaun',
+    'Watt',
+    'Heene',
+    'developer'
+];
+const isNotEmpty = string => !! string;
+const allFieldsFilled = formValues.every(isNotEmpty);
+console.log(allFieldsFilled);
+
