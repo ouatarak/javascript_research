@@ -78,7 +78,7 @@ const ascending = (a, b) => {
 
 const sortedNumbers = mixedUpNumbers.slice().sort(ascending);
 console.log(sortedNumbers);
-*/
+
 
 const mixedUpNumbers = [10, 2, 4, 3, 7, 5, 8, 9, 1, 6];
 const descending = (a, b) => {
@@ -89,3 +89,16 @@ const descending = (a, b) => {
 
 const sortedNumbers = mixedUpNumbers.slice().sort(descending);
 console.log(sortedNumbers);
+*/
+
+//Reducing//
+
+const numbers = [5, 7, 2, 40, 23, 14, 8, 4, 11];
+const sum = numbers.reduce((acc, x) => {
+    console.log('acc is ${acc}');
+    console.log('x is ${x}');
+
+    return acc + x;
+}, 0);
+
+console.log(sum);
